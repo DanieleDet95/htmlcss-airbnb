@@ -1,0 +1,67 @@
+/* Impostazione reset */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Impostazione Conteiner */
+.conteiner{
+  width: 30%;
+  background: red;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* Impostazione blocco generale */
+.blocco{
+  position: relative;
+  height: 29vh;
+  margin-bottom: 20px;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 3px 3px 3px black;
+}
+.blocco:last-child{
+  margin-bottom: 0px;
+}
+
+/* Aggiunta sfondi */
+.milano{
+  background-image: url(../img/milano.jpg);
+}
+.roma{
+  background-image: url(../img/roma.jpg);
+}
+.napoli{
+  background-image: url(../img/napoli.jpg);
+}
+
+/* Impostazione Titolo citta */
+.blocco h2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+/* Impostazione filtro */
+.filter{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Impostazioni aggiuntive con hover */
+.blocco:hover .filter{
+    background-color: rgba(0, 0, 0, 0);
+}
+.blocco:hover{
+  box-shadow: 6px 6px 6px black;
+  border-radius: 10px;
+}
+.blocco:hover h2{
+  font-size: 30px;
+}
